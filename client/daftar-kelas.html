@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- flowbite component -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../client/styles.css">
+    <title>Daftar kelas</title>
+</head>
+
+<body class="bg-primary">
+    <!-- navbar -->
+    <nav class="bg-secondary px-4 md:px-12 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-third">
+        <div class="container flex flex-wrap justify-between items-center mx-auto" bis_skin_checked="1">
+            <a href="https://flowbite.com/" class="flex items-center">
+            <img src="../asset/logo.png" class="mr-3 h-12" alt="cobadulu Logo">
+            </a>
+            <div class="flex md:order-2" bis_skin_checked="1">
+            <button type="button" class="btn mr-3 md:mr-0">Masuk</button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-third rounded-lg md:hidden hover:bg-primary focus:outline-none focus:ring-2 focus:ring-third" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+            </div>
+            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky" bis_skin_checked="1">
+          <ul class="flex flex-col p-4 mt-4 bg-third font-Inter rounded-lg border border-primary md:flex-row md:space-x-8 md:mt-0 md:font-semibold md:border-0 md:bg-secondary">
+            <li>
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="daftar-kelas.html" class="nav-link bg-secondary md:text-third">Kelas</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Dashboard</a>
+            </li>
+          </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- title -->
+    <section class="pt-24" style="background: linear-gradient(
+        rgba(36, 32, 75, 0.75), 
+        rgba(36, 32, 75, 0.75)
+      ), url(../asset/jumbotron.png), center; background-size: cover;">
+        <div class="h-half grid content-center justify-center px-4 md:px-12 text-center">
+            <div class="grid justify-items-center max-w-3xl gap-4">
+                <h2>Kelas di cobadulu.academy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio minus sint consequatur, sequi officia hic iusto impedit quaerat! Ad?</p>
+                
+                <!-- search -->
+                <div class="relative w-full" bis_skin_checked="1">
+                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none" bis_skin_checked="1">
+                        <span class="material-icons h-5 w-5 text-gray-500">search</span>
+                    </div>
+                    <input type="text" id="search" class="input pl-10" placeholder="Cari nama kelas">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- daftar kelas -->
+    <section class="container max-w-full py-12 px-4">
+        <div class="grid justify-items-center w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- kelas 1 -->
+                <div class="bg-secondary grid gap-4 py-6 px-6 rounded-xl max-w-xs">
+                    <div class="h-36 bg-banger rounded-lg"></div>
+                    <!-- teks -->
+                    <div class="grid gap-1">
+                        <!-- lokasi -->
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-banger">place</span>
+                            <p class="text-xs text-banger">Bandung</p>
+                        </div>
+    
+                        <h5 class="truncate">Menguasai python dalam 2 hari saja</h5>
+    
+                        <!-- date -->
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-third">event</span>
+                            <p class="text-xs">4 Oktober 2022</p>
+                        </div>
+                    </div>
+    
+                    <!-- Mentor -->
+                    <div class="flex gap-3 items-center">
+                        <!-- foto -->
+                        <div class="w-12 h-12 bg-third rounded-full"></div>
+                        <!-- teks -->
+                        <div>
+                            <h5 class="text-sm">Hasnat Ferdiannada</h5>
+                            <p class="text-xs text-third">Enterpreneur</p>
+                        </div>
+                    </div>
+    
+                    <!-- harga -->
+                    <div class="grid gap-3 pt-2 border-t-1 border-third">
+                        <div class="flex justify-between items-end">
+                            <p class="text-xs text-third line-through">Rp250.000</p>
+                            <h4 class="text-white">Rp49.000</h4>
+                        </div>
+    
+                        <a href="#" class="btn rounded-md t">+ Beli Sekarang</a>
+                    </div>
+                </div>
+    
+                <!-- kelas 1 -->
+                <div class="bg-secondary grid gap-4 py-6 px-6 rounded-xl max-w-xs">
+                    <div class="h-36 bg-banger rounded-lg"></div>
+                    <!-- teks -->
+                    <div class="grid gap-1">
+                        <!-- lokasi -->
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-banger">place</span>
+                            <p class="text-xs text-banger">Bandung</p>
+                        </div>
+    
+                        <h5 class="truncate">Menguasai python dalam 2 hari saja</h5>
+    
+                        <!-- date -->
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-third">event</span>
+                            <p class="text-xs">4 Oktober 2022</p>
+                        </div>
+                    </div>
+    
+                    <!-- Mentor -->
+                    <div class="flex gap-3 items-center">
+                        <!-- foto -->
+                        <div class="w-12 h-12 bg-third rounded-full"></div>
+                        <!-- teks -->
+                        <div>
+                            <h5 class="text-sm">Hasnat Ferdiannada</h5>
+                            <p class="text-xs text-third">Enterpreneur</p>
+                        </div>
+                    </div>
+    
+                    <!-- harga -->
+                    <div class="grid gap-3 pt-2 border-t-1 border-third">
+                        <div class="flex justify-between items-end">
+                            <p class="text-xs text-third line-through">Rp250.000</p>
+                            <h4 class="text-white">Rp49.000</h4>
+                        </div>
+    
+                        <a href="#" class="btn rounded-md t">+ Beli Sekarang</a>
+                    </div>
+                </div>
+    
+                <!-- kelas 1 -->
+                <div class="bg-secondary grid gap-4 py-6 px-6 rounded-xl max-w-xs">
+                    <div class="h-36 bg-banger rounded-lg"></div>
+                    <!-- teks -->
+                    <div class="grid gap-1">
+                        <!-- lokasi -->
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-banger">place</span>
+                            <p class="text-xs text-banger">Bandung</p>
+                        </div>
+    
+                        <h5 class="truncate">Menguasai python dalam 2 hari saja</h5>
+    
+                        <!-- date -->
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-third">event</span>
+                            <p class="text-xs">4 Oktober 2022</p>
+                        </div>
+                    </div>
+    
+                    <!-- Mentor -->
+                    <div class="flex gap-3 items-center">
+                        <!-- foto -->
+                        <div class="w-12 h-12 bg-third rounded-full"></div>
+                        <!-- teks -->
+                        <div>
+                            <h5 class="text-sm">Hasnat Ferdiannada</h5>
+                            <p class="text-xs text-third">Enterpreneur</p>
+                        </div>
+                    </div>
+    
+                    <!-- harga -->
+                    <div class="grid gap-3 pt-2 border-t-1 border-third">
+                        <div class="flex justify-between items-end">
+                            <p class="text-xs text-third line-through">Rp250.000</p>
+                            <h4 class="text-white">Rp49.000</h4>
+                        </div>
+    
+                        <a href="#" class="btn rounded-md t">+ Beli Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- kelas 1 -->
+                <div class="bg-secondary grid gap-4 py-6 px-6 rounded-xl max-w-xs">
+                    <div class="h-36 bg-banger rounded-lg"></div>
+                    <!-- teks -->
+                    <div class="grid gap-1">
+                        <!-- lokasi -->
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-banger">place</span>
+                            <p class="text-xs text-banger">Bandung</p>
+                        </div>
+    
+                        <h5 class="truncate">Menguasai python dalam 2 hari saja</h5>
+    
+                        <!-- date -->
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-third">event</span>
+                            <p class="text-xs">4 Oktober 2022</p>
+                        </div>
+                    </div>
+    
+                    <!-- Mentor -->
+                    <div class="flex gap-3 items-center">
+                        <!-- foto -->
+                        <div class="w-12 h-12 bg-third rounded-full"></div>
+                        <!-- teks -->
+                        <div>
+                            <h5 class="text-sm">Hasnat Ferdiannada</h5>
+                            <p class="text-xs text-third">Enterpreneur</p>
+                        </div>
+                    </div>
+    
+                    <!-- harga -->
+                    <div class="grid gap-3 pt-2 border-t-1 border-third">
+                        <div class="flex justify-between items-end">
+                            <p class="text-xs text-third line-through">Rp250.000</p>
+                            <h4 class="text-white">Rp49.000</h4>
+                        </div>
+    
+                        <a href="#" class="btn rounded-md t">+ Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <nav aria-label="Page navigation example">
+                <ul class="inline-flex items-center -space-x-px">
+                  <li>
+                    <a href="#" class="block rounded-l-lg border pagination">
+                      <span class="sr-only">Previous</span>
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="pagination">1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="pagination">2</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-current="page" class="pagination">3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="pagination">4</a>
+                  </li>
+                  <li>
+                    <a href="#" class="pagination">5</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block rounded-r-lg border pagination">
+                      <span class="sr-only">Next</span>
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+               
+        </div>
+        
+    </section>
+
+
+    <!-- footer -->
+    <footer class="bg-secondary px-6 md:px-12">
+        <div class="py-6 md:py-10 md:grid md:justify-between md:grid-cols-12">
+            <!-- logo -->
+            <div class="mb-8 md:mb-0 md:col-span-5">
+                <a href="#beranda" class="flex items-center select-none">
+                    <img src="../asset/logo.png" loading="lazy" class="h-12 md:h-16" alt="cobadulu Logo" />
+                </a>
+
+                <p class="text-third font-Inter text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, eos?</p>
+            </div>
+
+            <!-- info -->
+            <div class="grid grid-cols-2 md:col-start-10 md:col-span-3">
+                <!-- quick link -->
+                <div>
+                    <h2 class="mb-6 text-sm md:text-base font-semibold uppercase text-white selection:text-black">Quick Link</h2>
+                    <ul class="text-third text-sm font-Inter select-none">
+                        <li class="mb-4">
+                            <a href="index.html" class="hover:underline">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="daftar-kelas.html" class="hover:underline">Daftar Kelas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- contact info -->
+                <div>
+                    <h2 class="mb-6 text-sm md:text-base font-semibold text-white uppercase selection:text-black">Contact Info</h2>
+                    <ul class="text-third font-Inter text-sm select-none">
+                        <li class="mb-4">
+                            <a href="https://www.instagram.com/hasnat5_/" target="_blank"
+                                class="hover:underline ">E-mail</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://discordapp.com/users/626250734954086410" target="_blank"
+                                class="hover:underline">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/hasnat5" target="_blank" class="hover:underline">Phone number</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="border-third mx-auto md::mb-8" />
+
+        <div class="py-6 md:flex md:justify-between ">
+            <!-- copyright -->
+            <span class="text-sm md:text-base text-third">© 2022 <a href="https://www.instagram.com/hasnat5_/"
+                    class="hover:underline">cobadulu.academy</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>

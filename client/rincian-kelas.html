@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    
+    <!-- flowbite component -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../client/styles.css">
+    <title>Rincian Kelas</title>
+</head>
+<body>
+    <main class="container mx-auto max-w-full bg-primary">
+        <!-- wrapper -->
+        <div class="grid justify-center py-12 px-4 md:px-12 md:py-16 gap-8 md:grid-cols-12">
+            <!-- konten -->
+            <div id="content" class="md:col-span-8 grid gap-12">
+                <article>
+                    <h2 class="mb-6">JudulKelas</h2>
+                    <p class="label">IT Support</p>
+                </article>
+
+                <article class="grid gap-6">
+                    <h3>Tentang Program</h3>
+                    <p>Selamat datang di kelas kelima program Setara Allianz. Melalui kelas ini learners akan mempelajari konsep dasar bisnis keuangan, strategi membangun sistem keuangan bisnis, cara mengembangkan ide inovatif untuk pengembangan bisnis, dan bagaimana membuat rencana strategis untuk mengembangkan bisnis. Tidak hanya itu, learners juga akan mempelajari jenis-jenis sumber pendanaan bisnis, strategi mendapatkan pendanaan, strategi menyiapkan bisnis untuk memperoleh pendanaan, akses ke lembaga keuangan, dan cara mengajukan pinjaman bank.</p>
+                </article>
+
+                <!-- Mentor -->
+                <article class="grid gap-6">
+                    <h3>Mentor</h3>
+                    <div class="bg-secondary rounded-2xl grid px-6 py-9 content-center justify-items-center text-center gap-3 w-52">
+                        <div class="h-28 w-28 rounded-full bg-banger"></div>
+                        <h4 class="text-lg">Hasnat Ferdiananda</h4>
+                        <p class="text-third">Full-Stack Developer</p>
+                    </div>
+                </article>
+
+                <!-- rangkaian materi -->
+                <article class="grid gap-6">
+                    <h3>Rangkaian Materi</h3>
+                    <!-- rangkaian Materi -->
+                    <div id="accordion-open" data-accordion="open" bis_skin_checked="1">
+                        <h2 id="accordion-open-heading-1">
+                          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-third rounded-t-xl hover:bg-secondary bg-secondary text-white" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
+                            <h4 class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg> What is Flowbite?</h4>
+                            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-open-body-1" class="" aria-labelledby="accordion-open-heading-1" bis_skin_checked="1">
+                          <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900" bis_skin_checked="1">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                          </div>
+                        </div>
+                        <h2 id="accordion-open-heading-2">
+                          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>Is there a Figma file available?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2" bis_skin_checked="1">
+                          <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+                          </div>
+                        </div>
+                        <h2 id="accordion-open-heading-3">
+                          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg> What are the differences between Flowbite and Tailwind UI?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3" bis_skin_checked="1">
+                          <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- FAQ -->
+                <article class="grid gap-6">
+                    <h3>Sering Ditanyakan</h3>
+                    <!-- FAQ -->
+                    <div id="accordion-open" data-accordion="open" bis_skin_checked="1">
+                        <h2 id="accordion-open-heading-1">
+                          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-third rounded-t-xl hover:bg-secondary bg-secondary text-white" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg> What is Flowbite?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-open-body-1" class="" aria-labelledby="accordion-open-heading-1" bis_skin_checked="1">
+                          <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900" bis_skin_checked="1">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                          </div>
+                        </div>
+                        <h2 id="accordion-open-heading-2">
+                          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>Is there a Figma file available?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2" bis_skin_checked="1">
+                          <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+                          </div>
+                        </div>
+                        <h2 id="accordion-open-heading-3">
+                          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg> What are the differences between Flowbite and Tailwind UI?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3" bis_skin_checked="1">
+                          <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700" bis_skin_checked="1">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Kelas -->
+            <aside class="order-first md:order-2 md:justify-self-center md:col-start-9 md:col-span-4">
+                <!-- kelas 1 -->
+                <div class="sticky top-2 bg-secondary grid gap-6 py-6 px-6 rounded-xl md:max-w-xs">
+                    <!-- gambar -->
+                    <div class="h-36 bg-banger rounded-lg"></div>
+                    <!-- teks -->
+                    <div class="grid gap-3 text-center">
+                        <h3>Rp.49.000</h3>
+                        <h5 class="line-through text-third">Rp.250.000</h5>
+
+                        <a href="#" class="btn rounded-md">+ Beli Sekarang</a>
+                        <a href="#" class="btn-sec rounded-md">+ Tambah Favorit</a>
+                    </div>
+    
+                    <!-- cakupan kelas -->
+                    <div class="grid gap-3 pt-4 border-t-1 border-third">
+                        <h4 class="text-lg">Kelas ini mencakup :</h4>
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-white">question_answer</span>
+                            <p class="text-sm">Forum diskusi antar learners</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-white">event</span>
+                            <p class="text-sm">Akses sepuasnya selama 12 bulan</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-icons text-white">emoji_events</span>
+                            <p class="text-sm">Sertifikat penyelesaian</p>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-secondary px-6 md:px-12">
+        <div class="py-6 md:py-10 md:grid md:justify-between md:grid-cols-12">
+            <!-- logo -->
+            <div class="mb-8 md:mb-0 md:col-span-5">
+                <a href="#beranda" class="flex items-center select-none">
+                    <img src="../asset/logo.png" loading="lazy" class="mr-3 h-12" alt="Nazwa Logo" />
+                </a>
+
+                <p class="text-third text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, eos?</p>
+            </div>
+
+            <!-- info -->
+            <div class="grid grid-cols-2 md:col-start-10 md:col-span-3">
+                <!-- quick link -->
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white selection:text-black">Quick Link</h2>
+                    <ul class="text-third select-none">
+                        <li class="mb-4">
+                            <a href="#beranda" class="hover:underline">Home</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#tentang" class="hover:underline">Tentang</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#hobi" class="hover:underline">Hobi</a>
+                        </li>
+                        <li>
+                            <a href="#karya" class="hover:underline">Karya</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- contact info -->
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase selection:text-black">Contact Info</h2>
+                    <ul class="text-third select-none">
+                        <li class="mb-4">
+                            <a href="https://www.instagram.com/hasnat5_/" target="_blank"
+                                class="hover:underline ">Instagram</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://discordapp.com/users/626250734954086410" target="_blank"
+                                class="hover:underline">Discord</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/hasnat5" target="_blank" class="hover:underline">Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="border-third mx-auto md::mb-8" />
+
+        <div class="py-6 md:flex md:justify-between ">
+            <!-- copyright -->
+            <span class="text-sm md:text-base text-third">© 2022 <a href="https://www.instagram.com/hasnat5_/"
+                    class="hover:underline">Hasnat</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>
