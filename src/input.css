@@ -37,6 +37,10 @@
         @apply text-center inline-block rounded-3xl py-2 px-4 bg-white text-CTA font-Inter font-semibold text-sm md:px-6 md:text-base;
     }
 
+    .navBg{
+        @apply bg-secondary border-b border-third;
+    }
+
     .manfaat {
         @apply p-6 md:p-8 rounded-3xl;
         background-color: theme(colors.secondary);
@@ -58,6 +62,14 @@
 
     .pagination{
         @apply py-2 px-3 leading-tight text-gray-500 bg-secondary border border-third hover:bg-third hover:text-white;
+    }
+
+    .accordion{
+        @apply flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-third hover:bg-third bg-secondary text-gray-900;
+    }
+
+    .accordion-isi{
+        @apply p-5 font-Inter border border-b-0 border-third;
     }
 }
 
