@@ -71,6 +71,24 @@
     .accordion-isi{
         @apply p-5 font-Inter border border-b-0 border-third;
     }
+
+    .swiper-navBtn{
+        @apply font-bold text-CTA hover:text-CTAsec transition-colors ease-in-out duration-300;
+    }
+
+    .swiper-navBtn::before,
+    .swiper-navBtn::after{
+        font-size: 35px;
+    }
+
+    .swiper-pagination-bullet{
+        @apply bg-CTAsec;
+        opacity: 1;
+      }
+    
+    .swiper-pagination-bullet-active{
+        @apply bg-CTA
+    }
 }
 
 @layer utilities {
