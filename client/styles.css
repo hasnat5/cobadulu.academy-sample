@@ -1321,6 +1321,18 @@ p {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.bg-signup {
+  background-image: url('../asset/sign up.jpg');
+}
+
+.bg-main {
+  background-image: url('../asset/jumbotron.png');
+}
+
+.bg-mentor {
+  background-image: url('../asset/mentor.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1420,12 +1432,12 @@ p {
   padding-top: 0.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {

@@ -87,7 +87,7 @@
       }
     
     .swiper-pagination-bullet-active{
-        @apply bg-CTA
+        @apply bg-CTA;
     }
 }
 
