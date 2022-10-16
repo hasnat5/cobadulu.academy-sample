@@ -1079,10 +1079,6 @@ p {
   width: 1.25rem;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .w-80 {
   width: 20rem;
 }
@@ -1093,6 +1089,42 @@ p {
 
 .w-28 {
   width: 7rem;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.min-w-max {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.min-w-min {
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+.min-w-\[300px\] {
+  min-width: 300px;
+}
+
+.min-w-\[250px\] {
+  min-width: 250px;
+}
+
+.min-w-\[260px\] {
+  min-width: 260px;
+}
+
+.min-w-\[270px\] {
+  min-width: 270px;
+}
+
+.min-w-\[280px\] {
+  min-width: 280px;
 }
 
 .max-w-full {
@@ -1222,10 +1254,6 @@ p {
   border-radius: 0.75rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -1236,6 +1264,10 @@ p {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-l-lg {
@@ -1321,16 +1353,12 @@ p {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
-.bg-signup {
-  background-image: url('../asset/sign up.jpg');
+.bg-\[url\(\'\/asset\/mentor\.jpg\'\)\] {
+  background-image: url('/asset/mentor.jpg');
 }
 
-.bg-main {
-  background-image: url('../asset/jumbotron.png');
-}
-
-.bg-mentor {
-  background-image: url('../asset/mentor.jpg');
+.bg-\[url\(\'\.\.\/asset\/login\.jpg\'\)\] {
+  background-image: url('../asset/login.jpg');
 }
 
 .bg-cover {
@@ -1552,6 +1580,11 @@ p {
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-CTA {
+  --tw-text-opacity: 1;
+  color: rgb(0 83 251 / var(--tw-text-opacity));
 }
 
 .underline {

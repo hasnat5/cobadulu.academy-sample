@@ -47,6 +47,7 @@
             </div>
         </div>
     </nav>
+
     <main class="container mx-auto max-w-full bg-primary">
         <!-- wrapper -->
         <div class="grid justify-center py-24 px-4 md:px-12 md:pt-28 gap-8 md:grid-cols-12">
@@ -69,6 +70,19 @@
                         <div class="h-28 w-28 rounded-full bg-banger"></div>
                         <h4 class="text-lg">Hasnat Ferdiananda</h4>
                         <p class="text-third">Full-Stack Developer</p>
+                    </div>
+                </article>
+
+                <!-- jadwal -->
+                <article class="grid gap-6">
+                    <h3>Jadwal</h3>
+                    <div class="flex items-center gap-2">
+                        <span class="material-icons text-white">event</span>
+                        <p class="text-sm"><%= data ? data.jadwal.awal || '' : '' %> - <%= data ? data.jadwal.akhir || '' : '' %></p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-icons text-white">schedule</span>
+                        <p class="text-sm"><%= data ? data.jadwal.keterangan || '' : '' %></p>
                     </div>
                 </article>
 
@@ -110,6 +124,7 @@
                     
                 </article>
 
+    
                 <!-- FAQ -->
                 <article class="grid gap-6">
                     <h3>Sering Ditanyakan</h3>
@@ -170,7 +185,12 @@
                         <h5 class="line-through text-third">Rp.250.000</h5>
 
                         <a href="#" class="btn rounded-md">+ Beli Sekarang</a>
-                        <a href="#" class="btn-sec rounded-md">+ Tambah Favorit</a>
+                        
+                        <a href="#" class="btn-sec rounded-md flex justify-center items-center gap-2">
+                            <span class="material-icons">favorite_border</span>
+                            <p class="text-sm text-CTA">500</p>
+                        </a>
+                        
                     </div>
     
                     <!-- cakupan kelas -->
