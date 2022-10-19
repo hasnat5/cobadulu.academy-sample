@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- flowbite component -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="../client/styles.css">
+    <title>Dashboard-admin</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="relative container mx-auto z-10">
+        
+        <div class="navbar bg-secondary fixed top-0 right-0 flex w-full mx-auto justify-between items-center py-2.5 px-4 md:px-12 z-10 transition duration-100 ease-in">
+
+            <a href="index.html" class="flex items-center cursor-default lg:cursor-pointer">
+                <img src="../asset/logo.png" class="mr-3 h-12" alt="logo">
+                <span class="text-white font-semibold font-Montserrat text-sm">Admin</span>
+            </a>
+        
+            <button class="burgerBar inline-block cursor-pointer z-10 md:hidden">
+                <span class="material-icons select-none text-white hover:select-none active:select-none active:text-sec md:hidden">menu</span>
+            </button>
+            
+            <aside class="listBar md:hidden -translate-x-full bg-secondary fixed inset-0 top-14 left-0 bottom-0 z-50 h-screen w-[280px] bg-section pt-3 sm:w-[300px] md:relative md:top-0 md:z-0 md:h-auto lg:w-[300px] xl:w-[340px] transition-all duration-300 ease-in-out">
+                <div class="flex max-h-[calc(100vh-64px)] flex-col justify-between pb-2 md:h-full md:max-h-full md:pt-16">
+                    
+                    <ul class="grid grid-rows-3 gap-y-2">
+                        <a href="admin-beranda.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        home
+                                        </span>
+                                    <h5 class="ml-4 uppercase">Beranda</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-mentor.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 border-l-4 border-l-CTAsec bg-third/30">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-CTAsec">
+                                        account_circle
+                                        </span>
+                                    <h5 class="ml-4 uppercase text-CTAsec">Mentor</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-prodi.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        school
+                                        </span>
+                                    <h5 class="ml-4 uppercase">Prodi</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-user.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        person
+                                        </span>
+                                    <h5 class="ml-4 uppercase">User</h5>
+                                </div>
+                            </li>
+                        </a>
+                        
+                        <a href="login-admin.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-banger">
+                                        logout
+                                        </span>
+                                    <h5 class="ml-4 uppercase text-banger">Keluar</h5>
+                                </div>
+                            </li>
+                        </a>
+        
+                        
+                    </ul>
+                </div>
+            </aside>
+    
+        </div>
+        
+    </nav>
+
+    <div class="flex">
+        <aside class="hidden md:block bg-secondary fixed inset-0 top-14 left-0 bottom-0 z-50 h-screen w-[280px] bg-section pt-3 sm:w-[300px] md:relative md:top-0 md:z-0 md:h-auto lg:w-[300px] xl:w-[340px]">
+            <div class="flex max-h-[calc(100vh-64px)] flex-col justify-between pb-2 md:h-full md:max-h-full md:pt-16">
+    
+                <ul class="grid grid-rows-3 gap-y-2">
+                    <a href="admin-beranda.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    home
+                                    </span>
+                                <h5 class="ml-4 uppercase">Beranda</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-mentor.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 border-l-4 border-l-CTAsec bg-third/30">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-CTAsec">
+                                    account_circle
+                                    </span>
+                                <h5 class="ml-4 uppercase text-CTAsec">Mentor</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-prodi.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    school
+                                    </span>
+                                <h5 class="ml-4 uppercase">Prodi</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-user.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    person
+                                    </span>
+                                <h5 class="ml-4 uppercase">User</h5>
+                            </div>
+                        </li>
+                    </a>
+                    
+                    <a href="login-admin.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-banger">
+                                    logout
+                                    </span>
+                                <h5 class="ml-4 uppercase text-banger">Keluar</h5>
+                            </div>
+                        </li>
+                    </a>
+    
+                    
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- kontent -->
+        <main class="bg-primary scrollbar-hide mt-16 min-h-[calc(100vh-64px)] w-full overflow-hidden px-4 pb-6 lg:max-h-[calc(100vh-64px)] lg:overflow-y-scroll lg:px-5">
+
+            <header class="mt-4 mb-3 w-full md:mb-6">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-xl font-bold uppercase sm:text-2xl">Tambah Mentor</h1>
+                </div>
+            </header>
+            
+            <!-- form buat mentor -->
+            <section>
+                <form>
+                    <div class="grid gap-14 mb-6 max-w-xl">
+                        <!-- nama mentor -->
+                        <div bis_skin_checked="1">
+                            <label for="nama"
+                                class="block mb-2 text-sm font-medium text-third">Nama mentor*</label>
+                            <input type="text" name="nama" required value="<%= data ? data.nama : '' %>" class="input" placeholder="John">
+                        </div>
+                        
+                        <!-- kedudukan -->
+                        <div bis_skin_checked="1">
+                            <label for="kedudukan"
+                                class="block mb-2 text-sm font-medium text-third">Kedudukan*</label>
+                            <input type="text" name="kedudukan" required value="<%= data ? data.kedudukan :  '' %>" class="input" placeholder="CEO">
+                        </div>
+
+                        <!-- foto -->
+                        <div bis_skin_checked="1">
+                            <label for="foto" class="block mb-2 text-sm font-medium text-third">Foto</label> 
+                            <% if (data) { %>
+                                <% if (data.cover) { %>
+                                    <input type="hidden" value="<%= data.foto %>" name="fotolama">
+                                    <img src="/images/<%= data.foto %>" width="300" height="150" alt="">
+                                <% } %>
+                            <% } %>
+                            <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer" type="file" name="foto" />
+
+                        </div>
+            
+                    </div>
+            
+                    <button type="submit"
+                        class="rounded-lg py-2 px-4 w-full btn hover:bg-blue-800 md:px-6 md:text-base md:w-auto">Submit</button>
+                </form>
+                
+            </section>
+            
+            
+            
+        </main>
+    </div>
+    
+    
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
+    <script src="dashnav.js"></script>
+</body>
+</html>

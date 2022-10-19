@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- flowbite component -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="../client/styles.css">
+    <title>Dashboard-admin</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="relative container mx-auto z-10">
+        
+        <div class="navbar bg-secondary fixed top-0 right-0 flex w-full mx-auto justify-between items-center py-2.5 px-4 md:px-12 z-10 transition duration-100 ease-in">
+
+            <a href="index.html" class="flex items-center cursor-default lg:cursor-pointer">
+                <img src="../asset/logo.png" class="mr-3 h-12" alt="logo">
+                <span class="text-white font-semibold font-Montserrat text-sm">Admin</span>
+            </a>
+        
+            <button class="burgerBar inline-block cursor-pointer z-10 md:hidden">
+                <span class="material-icons select-none text-white hover:select-none active:select-none active:text-sec md:hidden">menu</span>
+            </button>
+            
+            <aside class="listBar md:hidden -translate-x-full bg-secondary fixed inset-0 top-14 left-0 bottom-0 z-50 h-screen w-[280px] bg-section pt-3 sm:w-[300px] md:relative md:top-0 md:z-0 md:h-auto lg:w-[300px] xl:w-[340px] transition-all duration-300 ease-in-out">
+                <div class="flex max-h-[calc(100vh-64px)] flex-col justify-between pb-2 md:h-full md:max-h-full md:pt-16">
+                    
+                    <ul class="grid grid-rows-3 gap-y-2">
+                        <a href="admin-beranda.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        home
+                                        </span>
+                                    <h5 class="ml-4 uppercase">Beranda</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-mentor.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        account_circle
+                                        </span>
+                                    <h5 class="ml-4 uppercase">Mentor</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-prodi.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 border-l-4 border-l-CTAsec bg-third/30">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-CTAsec">
+                                        school
+                                        </span>
+                                    <h5 class="ml-4 uppercase text-CTAsec">Prodi</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-user.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        person
+                                        </span>
+                                    <h5 class="ml-4 uppercase">User</h5>
+                                </div>
+                            </li>
+                        </a>
+                        
+                        <a href="login-admin.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-banger">
+                                        logout
+                                        </span>
+                                    <h5 class="ml-4 uppercase text-banger">Keluar</h5>
+                                </div>
+                            </li>
+                        </a>
+        
+                        
+                    </ul>
+                </div>
+            </aside>
+    
+        </div>
+        
+    </nav>
+
+    <div class="flex">
+        <aside class="hidden md:block bg-secondary fixed inset-0 top-14 left-0 bottom-0 z-50 h-screen w-[280px] bg-section pt-3 sm:w-[300px] md:relative md:top-0 md:z-0 md:h-auto lg:w-[300px] xl:w-[340px]">
+            <div class="flex max-h-[calc(100vh-64px)] flex-col justify-between pb-2 md:h-full md:max-h-full md:pt-16">
+                
+                <ul class="grid grid-rows-3 gap-y-2">
+                    <a href="admin-beranda.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    home
+                                    </span>
+                                <h5 class="ml-4 uppercase">Beranda</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-mentor.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    account_circle
+                                    </span>
+                                <h5 class="ml-4 uppercase">Mentor</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-prodi.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 border-l-4 border-l-CTAsec bg-third/30">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-CTAsec">
+                                    school
+                                    </span>
+                                <h5 class="ml-4 uppercase text-CTAsec">Prodi</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-user.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    person
+                                    </span>
+                                <h5 class="ml-4 uppercase">User</h5>
+                            </div>
+                        </li>
+                    </a>
+                    
+                    <a href="login-admin.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-banger">
+                                    logout
+                                    </span>
+                                <h5 class="ml-4 uppercase text-banger">Keluar</h5>
+                            </div>
+                        </li>
+                    </a>
+    
+                    
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- kontent -->
+        <main class="bg-primary scrollbar-hide mt-16 min-h-[calc(100vh-64px)] w-full overflow-hidden px-4 pb-6 lg:max-h-[calc(100vh-64px)] lg:overflow-y-scroll lg:px-5">
+
+            <header class="mt-4 mb-3 w-full md:mb-6">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-rflex text-xl font-bold uppercase sm:text-2xl">Prodi</h1>
+                    
+                    <!-- add class -->
+                    <div class="grid items-center gap-2">
+                        <a href="admin-prodi-add.html" class="inline-block text-white text-base font-Inter font-semibold items-center md:text-lg">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined">add_circle_outline</span>
+                                <span class="ml-1">Prodi</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        
+            <section>
+                <!-- tabel prodi -->
+                <div class="overflow-x-auto relative shadow-md sm:rounded-lg" bis_skin_checked="1">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="py-3 px-6">
+                                    Nama prodi
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    <span class="sr-only">Edit</span>
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    <span class="sr-only">Delete</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Apple MacBook Pro 17"
+                                </th>
+                                <!-- edit -->
+                                <td class="py-4 px-6 text-right">
+                                    <a href="daftar-kelas.html" class="inline-block font-medium text-CTAsec font items-center">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-base font-medium">edit</span>
+                                            <span class="ml-1 hover:underline">Edit</span>
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <!-- delete -->
+                                <td class="py-4 px-6 text-right">
+                                    <a href="daftar-kelas.html" class="inline-block font-medium text-banger font items-center">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-base font-medium">delete</span>
+                                            <span class="ml-1 hover:underline">Delete</span>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Microsoft Surface Pro
+                                </th>
+                                 <!-- edit -->
+                                 <td class="py-4 px-6 text-right">
+                                    <a href="daftar-kelas.html" class="inline-block font-medium text-CTAsec font items-center">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-base font-medium">edit</span>
+                                            <span class="ml-1 hover:underline">Edit</span>
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <!-- delete -->
+                                <td class="py-4 px-6 text-right">
+                                    <a href="daftar-kelas.html" class="inline-block font-medium text-banger font items-center">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-base font-medium">delete</span>
+                                            <span class="ml-1 hover:underline">Delete</span>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Magic Mouse 2
+                                </th>
+                                 <!-- edit -->
+                                 <td class="py-4 px-6 text-right">
+                                    <a href="daftar-kelas.html" class="inline-block font-medium text-CTAsec font items-center">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-base font-medium">edit</span>
+                                            <span class="ml-1 hover:underline">Edit</span>
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <!-- delete -->
+                                <td class="py-4 px-6 text-right">
+                                    <a href="daftar-kelas.html" class="inline-block font-medium text-banger font items-center">
+                                        <div class="flex items-center">
+                                            <span class="material-icons-outlined text-base font-medium">delete</span>
+                                            <span class="ml-1 hover:underline">Delete</span>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+        </main>
+    </div>
+    
+    
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
+    <script src="dashnav.js"></script>
+</body>
+</html>

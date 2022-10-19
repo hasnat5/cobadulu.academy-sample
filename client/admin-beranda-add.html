@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- flowbite component -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="../client/styles.css">
+    <title>Dashboard-admin</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="relative container mx-auto z-10">
+        
+        <div class="navbar bg-secondary fixed top-0 right-0 flex w-full mx-auto justify-between items-center py-2.5 px-4 md:px-12 z-10 transition duration-100 ease-in">
+
+            <a href="index.html" class="flex items-center cursor-default lg:cursor-pointer">
+                <img src="../asset/logo.png" class="mr-3 h-12" alt="logo">
+                <span class="text-white font-semibold font-Montserrat text-sm">Admin</span>
+            </a>
+        
+            <button class="burgerBar inline-block cursor-pointer z-10 md:hidden">
+                <span class="material-icons select-none text-white hover:select-none active:select-none active:text-sec md:hidden">menu</span>
+            </button>
+            
+            <aside class="listBar md:hidden -translate-x-full bg-secondary fixed inset-0 top-14 left-0 bottom-0 z-50 h-screen w-[280px] bg-section pt-3 sm:w-[300px] md:relative md:top-0 md:z-0 md:h-auto lg:w-[300px] xl:w-[340px] transition-all duration-300 ease-in-out">
+                <div class="flex max-h-[calc(100vh-64px)] flex-col justify-between pb-2 md:h-full md:max-h-full md:pt-16">
+                    
+                    <ul class="grid grid-rows-3 gap-y-2">
+                        <a href="admin-beranda.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 border-l-4 border-l-CTAsec bg-third/30">
+                                <div class="flex items-center text-CTAsec">
+                                    <span class="material-icons-outlined">
+                                        home
+                                        </span>
+                                    <h5 class="ml-4 uppercase text-CTAsec">Beranda</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-mentor.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        account_circle
+                                        </span>
+                                    <h5 class="ml-4 uppercase">Mentor</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-prodi.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        school
+                                        </span>
+                                    <h5 class="ml-4 uppercase">Prodi</h5>
+                                </div>
+                            </li>
+                        </a>
+    
+                        <a href="admin-user.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-white">
+                                        person
+                                        </span>
+                                    <h5 class="ml-4 uppercase">User</h5>
+                                </div>
+                            </li>
+                        </a>
+                        
+                        <a href="login-admin.html">
+                            <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-banger">
+                                        logout
+                                        </span>
+                                    <h5 class="ml-4 uppercase text-banger">Keluar</h5>
+                                </div>
+                            </li>
+                        </a>
+        
+                        
+                    </ul>
+                </div>
+            </aside>
+    
+        </div>
+        
+    </nav>
+
+    <div class="flex">
+        <aside class="hidden md:block bg-secondary fixed inset-0 top-14 left-0 bottom-0 z-50 h-screen w-[280px] bg-section pt-3 sm:w-[300px] md:relative md:top-0 md:z-0 md:h-auto lg:w-[300px] xl:w-[340px]">
+            <div class="flex max-h-[calc(100vh-64px)] flex-col justify-between pb-2 md:h-full md:max-h-full md:pt-16">
+    
+                <ul class="grid grid-rows-3 gap-y-2">
+                    <a href="admin-beranda.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 border-l-4 border-l-CTAsec bg-third/30">
+                            <div class="flex items-center text-CTAsec">
+                                <span class="material-icons-outlined">
+                                    home
+                                    </span>
+                                <h5 class="ml-4 uppercase text-CTAsec">Beranda</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-mentor.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    account_circle
+                                    </span>
+                                <h5 class="ml-4 uppercase">Mentor</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-prodi.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    school
+                                    </span>
+                                <h5 class="ml-4 uppercase">Prodi</h5>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a href="admin-user.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-white">
+                                    person
+                                    </span>
+                                <h5 class="ml-4 uppercase">User</h5>
+                            </div>
+                        </li>
+                    </a>
+                    
+                    <a href="login-admin.html">
+                        <li class="flex cursor-pointer items-center justify-between py-3 px-5 hover:bg-third">
+                            <div class="flex items-center">
+                                <span class="material-icons-outlined text-banger">
+                                    logout
+                                    </span>
+                                <h5 class="ml-4 uppercase text-banger">Keluar</h5>
+                            </div>
+                        </li>
+                    </a>
+              
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- kontent -->
+        <main class="bg-primary scrollbar-hide mt-16 min-h-[calc(100vh-64px)] w-full overflow-hidden px-4 pb-6 lg:max-h-[calc(100vh-64px)] lg:overflow-y-scroll lg:px-5">
+
+            <header class="mt-4 mb-3 w-full md:mb-6">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-xl font-bold uppercase sm:text-2xl">Tambah kelas</h1>
+                </div>
+            </header>
+            
+            <!-- form buat kelas -->
+            <section>
+                <form>
+                    <div class="grid gap-14 mb-6 max-w-xl">
+                        <!-- ketersediaan -->
+                        <div bis_skin_checked="1">
+                            <label for="ketersediaan" class="block mb-2 text-sm font-medium text-third">ketersediaan</label>    
+                            <div class="flex items-center mr-4">
+                                <input id="inline-checkbox" type="checkbox" value="true" name="ketersediaan" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2" <%= data ? (data.tersedia ? 'checked' : '') : '' %> />
+                                <label for="inline-checkbox" class="ml-2 text-sm font-medium text-gray-300">Tersedia</label>
+                            </div>
+                        </div>
+            
+                        <!-- Hot -->
+                        <div bis_skin_checked="1">
+                            <label for="hot" class="block mb-2 text-sm font-medium text-third">Hot</label>    
+                            <div class="flex items-center mr-4">
+                                <input id="inline-checkbox" type="checkbox" value="true" name="hot" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500" <%= data ? (data.hot ? 'checked' : '') : '' %> />
+                                <label for="inline-checkbox" class="ml-2 text-sm font-medium text-gray-300">Hot</label>
+                            </div>
+                        </div>
+                        
+                        <!-- judul -->
+                        <div bis_skin_checked="1">
+                            <label for="nama"
+                                class="block mb-2 text-sm font-medium text-third">Judul*</label>
+                            <input type="text" name="nama" required value="<%= data ? data nama : '' %>" class="input" placeholder="Nama kelas">
+                        </div>
+            
+                        <!-- prodi -->
+                        <div bis_skin_checked="1">
+                            <label for="prodi" class="block mb-2 text-sm font-medium text-third">Prodi*</label>
+                            <% if (prodis && prodis.length > 0) { %>
+                                <select name="prodi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                                     <% prodis.forEach(prodi => { %>
+                                        <option value="<%= prodi.nama %>"
+                                            <%= data ? ( data.prodi == prodi.nama ? 'selected' : '') : '' %> >
+                                            <%= prodi.nama %> 
+                                        </option>
+                                     <% }) %>
+                                </select>
+                                <% } else { %>
+                                    <a href="/dashboard/createprodi">Bikin data prodi</a>
+                                <% } %>   
+                        </div>
+            
+                        <!-- cover -->
+                        <div bis_skin_checked="1">
+                            <label for="coverlama" class="block mb-2 text-sm font-medium text-third">Cover</label> 
+                            <% if (data) { %>
+                                <% if (data.cover) { %>
+                                    <input type="hidden" value="<%= data.cover %>" name="coverlama">
+                                    <img src="/images/<%= data.cover %>" width="300" height="150" alt="">
+                                <% } %>
+                            <% } %>
+                            <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer" type="file" name="cover" />
+                        </div>
+                        
+                        <!-- deskripsi -->
+                        <div bis_skin_checked="1">
+                            <label for="deskripsi" class="block mb-2 text-sm font-medium text-third">Deskripsi*</label>
+                            <textarea name="deskripsi" rows="4" class="block p-2.5 w-full input"  placeholder="Tulis sesuatu" required><%= data ? data.deskripsi : '' %></textarea>
+                        </div>
+            
+                        <!-- jadwal -->
+                        <div bis_skin_checked="1">
+                            <label for="" class="block mb-2 text-sm font-medium text-third">Jadwal*</label>
+            
+                            <div class="grid gap-3">
+                                <!-- rentang waktu -->
+                                <div date-rangepicker="" class="flex items-center" bis_skin_checked="1">
+                                    <div class="relative" bis_skin_checked="1">
+                                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none" bis_skin_checked="1">
+                                          <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                      </div>
+                                      <input name="jadwal[awal]" type="text" value="<%= data ? data.jadwal.awal || '' : '' %>" required class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 datepicker-input" placeholder="Select date start">
+                                    </div>
+                                    <span class="mx-4 text-gray-500">to</span>
+                                    <div class="relative" bis_skin_checked="1">
+                                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none" bis_skin_checked="1">
+                                          <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                      </div>
+                                      <input name="jadwal[akhir]" type="text" value="<%= data ? data.jadwal.akhir || '' : '' %>" required class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 datepicker-input" placeholder="Select date end">
+                                    </div>
+                                </div>
+                                
+                                <!-- keterangan -->
+                                <div>
+                                    <span class="text-gray-500">keterangan</span>
+                                    <input type="text" name="jadwal[keterangan]" value="<%= data ? data.jadwal.keterangan || '' : '' %>"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                        placeholder="keterangan">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- lokasi -->
+                        <div bis_skin_checked="1">
+                            <label for="lokasi" class="block mb-2 text-sm font-medium text-third">Lokasi*</label>
+                            <input type="text" class="input" name="lokasi" value="<%= data ? data.lokasi : '' %>" placeholder="Lokasi"/>
+                        </div>
+                        
+                        <!-- link mayar -->
+                        <div bis_skin_checked="1">
+                            <label for="link_mayar" class="block mb-2 text-sm font-medium text-third">Link mayar.id</label>
+                            <input type="text" class="input" name="link_mayar" value="<%= data ? data.link_mayar : '' %>" required placeholder="https://www.mayar.id/id"/>
+                        </div>
+                        
+                        <!-- harga -->
+                        <div bis_skin_checked="1">
+                            <label for="harga" class="block mb-2 text-sm font-medium text-third">Harga*</label>
+                            <input type="number" class="input" name="harga" value="<%= data ? data.harga : '' %>" required placeholder="500000"/>
+                        </div>
+                        
+                        <!-- harga promo -->
+                        <div bis_skin_checked="1">
+                            <label for="harga_promo" class="block mb-2 text-sm font-medium text-third">Harga promo</label>
+                            <input type="number" class="input" name="harga_promo" value="<%= data ? data.harga_promo : '' %>" placeholder="250000"/>
+                        </div>
+                        
+                        <!-- kapasitas kelas -->
+                        <div bis_skin_checked="1">
+                            <label for="kapasitas" class="block mb-2 text-sm font-medium text-third">Kapasitas kelas</label>
+                            <input type="number" class="input" name="kapasitas" value="<%= data ? data.kapasitas : '' %>" placeholder="500"/>
+                        </div>
+            
+                        <!-- mentor -->
+                        <div bis_skin_checked="1">
+                            <label for="mentors" class="block mb-2 text-sm font-medium text-third">Mentor*</label>
+                            <% if (mentors && mentors.length > 0) { %>
+                                <% mentors.forEach(mentor => { %>
+                                   
+                                    <input id="inline-checkbox" type="checkbox" value="<%= mentor.id %>" name="mentors" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500" />
+                                         
+                                    <%= mentor.nama %> 
+                                <% }) %>
+                            <% } else { %>
+                                <a class="text-CTAsec hover:underline font-medium" href="/dashboard/creatementor">Bikin data mentor</a>
+                            <% } %> 
+                        </div>
+            
+                        <!-- rangkaian materi -->
+                        <div bis_skin_checked="1">
+                            <label for="rangkaian_materi" class="block mb-2 text-sm font-medium text-third">rangkaian materi*</label>
+            
+                            <input type="text" class="input" name="rangkaian_materi" value="<%= data ? data.rangkaian_materi.join(', ') : '' %> " required placeholder="cont input: basic html, styling css, advanced js"/>
+                        </div>
+                        
+                        <!-- rangkaian materi -->
+                        <div bis_skin_checked="1">
+                            <label for="tags" class="block mb-2 text-sm font-medium text-third">Tags</label>
+            
+                            <input type="text" class="input" name="tags" value="<%= data ? data.tags.join(', ') : '' %> " placeholder="cont input: tech, kripto, duit"/>
+                        </div>
+            
+                    </div>
+            
+                    <button type="submit"
+                        class="rounded-lg py-2 px-4 w-full btn hover:bg-blue-800 md:px-6 md:text-base md:w-auto">Submit</button>
+                </form>
+                
+            </section>
+            
+            
+            
+        </main>
+    </div>
+    
+    
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
+    <script src="dashnav.js"></script>
+</body>
+</html>
